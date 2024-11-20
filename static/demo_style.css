@@ -1,0 +1,105 @@
+html {
+    animation: cycleBackground 120s infinite;
+    background-blend-mode: saturation;
+    background-size: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(15, 23, 42, 0.29);
+    background-size: cover;
+    color: #18181B;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@keyframes cycleBackground {
+    from {
+        background:
+                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
+                 #16A34A no-repeat;
+    }
+
+    20% {
+        background:
+                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
+                rgba(255, 105, 180, 1) no-repeat;
+    }
+
+    40% {
+        background:
+                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
+                rgba(250, 128, 114, 1) no-repeat;
+    }
+
+    60% {
+        background:
+                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
+                #4ADE80 no-repeat;
+    }
+
+    80% {
+        background:
+            /*linear-gradient(-123deg, rgba(255, 105, 180, 0.6), rgba(250, 128, 114, 0.6)),*/
+                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
+                #A855F7 no-repeat;
+    }
+
+    to {
+        background:
+            /*linear-gradient(-123deg, rgba(255, 105, 180, 0.6), rgba(250, 128, 114, 0.6)),*/
+                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
+                #16A34A no-repeat;
+    }
+}
+
+header {
+    color: black;
+    text-align: center;
+    padding: .1em;
+    text-shadow: 0 0 10px white;
+    background: radial-gradient(
+            ellipse 120% 35% at center,
+            /*ellipse at center,*/
+            rgba(255, 255, 255, 0.74) 5%,
+            transparent 50%);
+}
+
+main {
+    margin: 0 1.5em 1em 1.5em;
+    padding: .5em 1em .5em 1em;
+    background: rgba(255, 255, 255, 0.13);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+section {
+    padding: 0;
+}
+
+.section__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: .2em;
+    margin-bottom: -.1em;
+}
+
+.code-block {
+    background: rgba(255, 255, 255, 0.74);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 1em .1em;
+}
+
+.github-link {
+    color: #0e0e49;
+    text-decoration: none;
+    text-shadow: 0 0 4px #ffffff;
+}
