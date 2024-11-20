@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRCS Club HTML Pages</title>
+        <link href="/static/output.css" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/dracula.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/htmlmixed/htmlmixed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/xml/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/css/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/javascript/javascript.min.js"></script>
+
+    </head>
+    <body class="bg-slate-800">
+        <div class="flex flex-col justify-center items-center font-mono">
+            <h1 class="text-emerald-300 text-5xl pt-5">HTML Playground</h1>
+
+            <a href="/" class="font-mono rounded text-zinc-800 bg-emerald-300 p-2 m-6 hover:scale-105">Back to pages</a>
+            <p>{{message}}</p>
+            <button id="refresh-button" class="bg-emerald-300 p-2 rounded-md">Refresh</button>
+        </div>
+        <div class="flex flex-col font-mono">
+            <div class="flex flex-row m-2">
+                <div class="editor-container basis-1/2 m-1 border-zinc-800 border-2"><textarea id="code-editor"></textarea></div>
+                <iframe id="html-view" class="basis-1/2 m-1 border-2 border-zinc-800 bg-white"></iframe>
+            </div>
+            <div class="flex flex-row justify-center items-center">
+                <form enctype="multipart/form-data" action="/submit" method="post" id="code-form">
+                    <div class="flex flex-row justify-center items-center m-3">
+                        <textarea id="code-area" name="code" hidden></textarea>
+                        <label for="name" class="text-slate-300">Your Name:</label>
+                        <input type="text" name="name" id="name" class="bg-slate-500 border-slate-900 border-2 rounded"><br>
+                        <input type="submit" value="Submit File" class="font-mono rounded text-zinc-800 bg-emerald-300 p-2 m-2 hover:scale-105">
+                    </div>
+                </form>
+            <div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const refresh_button = document.getElementById("refresh-button")
+                const html_view = document.getElementById("html-view")
+                const form = document.getElementById("code-form")
+                const code_area = document.getElementById("code-area")
+                const editor = CodeMirror.fromTextArea(document.getElementById('code-editor'), {
+                    lineNumbers: true,
+                    mode: 'htmlmixed',
+                    theme: 'dracula',
+                    tabSize: 2,
+                    indentWithTabs: true,
+                    lineWrapping: true,
+                });
+                editor.setValue("<html>\n\t<head>\n\n\t</head>\n\t<body style='background-color:rebeccapurple'>\n\t\t<p>hello world!</p>\n\t</body>\n</html>")
+                html_view.setAttribute("srcdoc", editor.getValue())
+
+                refresh_button.addEventListener("click", (event) => {
+                    console.log(editor.getValue())
+                    html_view.setAttribute("srcdoc", editor.getValue())
+                })
+
+                form.addEventListener("submit", (event) => {
+                    code_area.value = editor.getValue()
+                })
+            });
+        </script>
+    </body>
+</html>

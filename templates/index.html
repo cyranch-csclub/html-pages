@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRCS Club HTML Pages</title>
+        <link href="/static/output.css" rel="stylesheet"> 
+    </head>
+    <body class="bg-slate-800">
+        <div class="flex flex-col justify-center items-center font-mono">
+            <h1 class="text-emerald-300 text-5xl pt-5">CRCS Club HTML Pages</h1>
+            <h2 class="text-emerald-300">11/20/2024</h2>
+            <a href="/submit" class="font-mono rounded text-zinc-800 bg-emerald-300 p-2 m-6 hover:scale-105">Make your page!</a>
+            
+            <div class="flex flex-col justify-center items-center">
+                <h2 class="text-emerald-300 text-2xl">Member Pages</h2>
+                <ul class="text-slate-300">
+                {% for page in pages %}
+                    <li><a href="/page/{{ page[1] }}" class="underline">{{ page[0] }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
