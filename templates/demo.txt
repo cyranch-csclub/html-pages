@@ -1,1 +1,85 @@
-&lt;!DOCTYPE&nbsp;html&gt;<br>&lt;html&nbsp;lang="en"&gt;<br>&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta&nbsp;charset="UTF-8"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta&nbsp;name="viewport"&nbsp;content="width=device-width,&nbsp;initial-scale=1.0"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&nbsp;rel="stylesheet"&nbsp;href="/static/demo_style.css"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;HTML&nbsp;+&nbsp;CSS&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;header&nbsp;class="header"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&nbsp;class="header__title"&gt;HTML&nbsp;and&nbsp;CSS&nbsp;-&nbsp;The&nbsp;Foundations&nbsp;of&nbsp;the&nbsp;Internet&lt;/h1&gt;<br>&lt;/header&gt;<br>&lt;nav&nbsp;class="nav"&gt;<br>&lt;/nav&gt;<br>&lt;main&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&nbsp;id="section1"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&nbsp;class="section__title"&gt;HTML:&nbsp;The&nbsp;Backbone&nbsp;of&nbsp;the&nbsp;Web&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;HTML,&nbsp;or&nbsp;&lt;b&gt;H&lt;/b&gt;yper&lt;b&gt;T&lt;/b&gt;ext&nbsp;&lt;b&gt;M&lt;/b&gt;arkup&nbsp;&lt;b&gt;L&lt;/b&gt;anguage,&nbsp;was&nbsp;created&nbsp;by&nbsp;Tim&nbsp;Berners-Lee,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;father&nbsp;of&nbsp;the&nbsp;World&nbsp;Wide&nbsp;Web.&nbsp;Initially,&nbsp;HTML&nbsp;was&nbsp;a&nbsp;simple&nbsp;language&nbsp;designed&nbsp;to&nbsp;share&nbsp;scientific<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;documents,&nbsp;but&nbsp;it&nbsp;had&nbsp;a&nbsp;grand&nbsp;dream:&nbsp;to&nbsp;create&nbsp;a&nbsp;universal&nbsp;system&nbsp;that&nbsp;anyone&nbsp;could&nbsp;use<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;share&nbsp;information&nbsp;online.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;By&nbsp;1995,&nbsp;HTML&nbsp;2.0&nbsp;emerged&nbsp;as&nbsp;the&nbsp;first&nbsp;official&nbsp;standard.&nbsp;It&nbsp;introduced&nbsp;key&nbsp;features&nbsp;like:&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Forms,&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Tables,&nbsp;and&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Basic&nbsp;multimedia&nbsp;support.&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The&nbsp;late&nbsp;1990s&nbsp;saw&nbsp;the&nbsp;release&nbsp;of&nbsp;HTML&nbsp;4.01,&nbsp;adding&nbsp;support&nbsp;for&nbsp;stylesheets&nbsp;(aka&nbsp;&lt;i&gt;CSS&lt;/i&gt;)&nbsp;and<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;improved&nbsp;accessibility&nbsp;(like&nbsp;alt&nbsp;text).&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&nbsp;id="section2"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;HTML5:&nbsp;The&nbsp;Web's&nbsp;Modern&nbsp;Foundation&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The&nbsp;real&nbsp;revolution&nbsp;began&nbsp;in&nbsp;2008&nbsp;with&nbsp;the&nbsp;development&nbsp;of&nbsp;&lt;b&gt;HTML5&lt;/b&gt;.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Officially&nbsp;standardized&nbsp;in&nbsp;2014,&nbsp;HTML5&nbsp;was&nbsp;designed&nbsp;to&nbsp;meet&nbsp;the&nbsp;demands&nbsp;of&nbsp;modern&nbsp;web&nbsp;applications.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;HTML5&nbsp;introduced&nbsp;a&nbsp;host&nbsp;of&nbsp;new&nbsp;features,&nbsp;including:&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Semantic&nbsp;tags&nbsp;(like&nbsp;&lt;code&gt;&lt;header&gt;&lt;/code&gt;&nbsp;and&nbsp;&lt;code&gt;&lt;footer&gt;&lt;/code&gt;),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;improving&nbsp;SEO&nbsp;and&nbsp;accessibility,&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Native&nbsp;multimedia&nbsp;support&nbsp;(like&nbsp;&lt;code&gt;&lt;video&gt;&lt;/code&gt;&nbsp;and&nbsp;&lt;code&gt;&lt;audio&gt;&lt;/code&gt;),&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;and&nbsp;APIs&nbsp;for&nbsp;offline&nbsp;storage,&nbsp;geolocation,&nbsp;and&nbsp;more.&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Improved&nbsp;semantics.&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;HTML5&nbsp;marked&nbsp;the&nbsp;web's&nbsp;transition&nbsp;from&nbsp;a&nbsp;document-based&nbsp;medium&nbsp;to&nbsp;an&nbsp;application&nbsp;platform,&nbsp;enabling<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;creation&nbsp;of&nbsp;rich,&nbsp;interactive&nbsp;experiences.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&nbsp;id="section3"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&nbsp;class="section__title"&gt;CSS:&nbsp;The&nbsp;Web's&nbsp;Visual&nbsp;Language&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;CSS,&nbsp;or&nbsp;&lt;b&gt;C&lt;/b&gt;ascading&nbsp;&lt;b&gt;S&lt;/b&gt;tyle&nbsp;&lt;b&gt;S&lt;/b&gt;heets,&nbsp;was&nbsp;introduced&nbsp;in&nbsp;1996&nbsp;by&nbsp;the&nbsp;W3C&nbsp;to&nbsp;address<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;growing&nbsp;need:&nbsp;separating&nbsp;a&nbsp;webpage's&nbsp;content&nbsp;from&nbsp;its&nbsp;design.&nbsp;Before&nbsp;CSS,&nbsp;styling&nbsp;was&nbsp;embedded<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;directly&nbsp;within&nbsp;HTML,&nbsp;making&nbsp;it&nbsp;difficult&nbsp;to&nbsp;manage&nbsp;and&nbsp;update&nbsp;websites.&nbsp;(Interestingly,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;frameworks&nbsp;like&nbsp;Tailwind&nbsp;seem&nbsp;to&nbsp;be&nbsp;regressing&nbsp;back&nbsp;to&nbsp;the&nbsp;old&nbsp;ways&nbsp;of&nbsp;inline&nbsp;styles,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;albeit&nbsp;with&nbsp;a&nbsp;better&nbsp;setup.)&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;b&gt;CSS1&lt;/b&gt;&nbsp;&lt;i&gt;(1996)&lt;/i&gt;&nbsp;offered&nbsp;basic&nbsp;styling&nbsp;capabilities-&nbsp;fonts,&nbsp;colors,&nbsp;and&nbsp;spacing.&nbsp;It&nbsp;was<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;revolutionary&nbsp;step&nbsp;but&nbsp;limited&nbsp;in&nbsp;scope.&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;b&gt;CSS2&lt;/b&gt;&nbsp;&lt;i&gt;(1998)&lt;/i&gt;&nbsp;expanded&nbsp;capabilities&nbsp;significantly,&nbsp;adding&nbsp;support&nbsp;for&nbsp;absolute<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;positioning,&nbsp;z-index,&nbsp;and&nbsp;media&nbsp;types.&nbsp;It&nbsp;enabled&nbsp;complex&nbsp;layouts&nbsp;and&nbsp;greater<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;design&nbsp;flexibility.&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;In&nbsp;&lt;i&gt;2011&lt;/i&gt;,&nbsp;&lt;b&gt;CSS3&lt;/b&gt;&nbsp;introduced&nbsp;a&nbsp;modular&nbsp;approach,&nbsp;allowing&nbsp;individual&nbsp;features<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;evolve&nbsp;independently.&nbsp;Key&nbsp;innovations&nbsp;included&nbsp;flexbox&nbsp;and&nbsp;grid&nbsp;layouts,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;media&nbsp;queries,&nbsp;transitions,&nbsp;and&nbsp;animations.&lt;br&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS3&nbsp;empowered&nbsp;designers&nbsp;to&nbsp;create&nbsp;visually&nbsp;stunning,&nbsp;highly&nbsp;responsive&nbsp;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&nbsp;id="section4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&nbsp;class="section__title"&gt;A&nbsp;Convergence&nbsp;of&nbsp;Power&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Today,&nbsp;HTML&nbsp;and&nbsp;CSS&nbsp;continue&nbsp;to&nbsp;evolve&nbsp;alongside&nbsp;the&nbsp;web's&nbsp;dynamic&nbsp;needs.&nbsp;They&nbsp;are&nbsp;supported&nbsp;by<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;vast&nbsp;ecosystem&nbsp;of&nbsp;tools,&nbsp;frameworks,&nbsp;and&nbsp;libraries.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The&nbsp;evolution&nbsp;of&nbsp;HTML&nbsp;and&nbsp;CSS&nbsp;is&nbsp;not&nbsp;just&nbsp;a&nbsp;tale&nbsp;of&nbsp;technological&nbsp;advancements–it's&nbsp;a&nbsp;testament<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;how&nbsp;collaboration&nbsp;and&nbsp;innovation&nbsp;can&nbsp;reshape&nbsp;the&nbsp;way&nbsp;we&nbsp;connect&nbsp;and&nbsp;interact&nbsp;with&nbsp;the&nbsp;world.&nbsp;HTML&nbsp;and&nbsp;CSS<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;have&nbsp;grown&nbsp;from&nbsp;simple&nbsp;tools&nbsp;into&nbsp;the&nbsp;cornerstones&nbsp;of&nbsp;a&nbsp;digital&nbsp;age,&nbsp;shaping&nbsp;how&nbsp;we&nbsp;experience&nbsp;the&nbsp;internet<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;today.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&nbsp;id="section5"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&nbsp;class="section__title"&gt;Demo&lt;/h2&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;HTML&lt;/h3&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&nbsp;style="color:darkred"&gt;to&nbsp;Be&nbsp;CONTINUED&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>&lt;/main&gt;<br>&lt;footer&nbsp;class="footer"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Made&nbsp;with&nbsp;❤️&nbsp;by&nbsp;&lt;a&nbsp;href="https://github.com/acemavrick"&nbsp;class="github-link"&gt;acemavrick&lt;/a&gt;&nbsp;and<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href="https://github.com/tvumcc"&nbsp;class="github-link"&gt;tvumcc&lt;/a&gt;&lt;/p&gt;<br>&lt;/footer&gt;<br>&lt;/body&gt;
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="/static/demo_style.css"&gt;
+    &lt;title&gt;HTML + CSS&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header class="header"&gt;
+    &lt;h1 class="header__title"&gt;HTML and CSS - The Foundations of the Internet&lt;/h1&gt;
+&lt;/header&gt;
+&lt;nav class="nav"&gt;
+&lt;/nav&gt;
+&lt;main&gt;
+    &lt;section id="section1"&gt;
+        &lt;h2 class="section__title"&gt;HTML: The Backbone of the Web&lt;/h2&gt;
+        &lt;p&gt;HTML, or &lt;b&gt;H&lt;/b&gt;yper&lt;b&gt;T&lt;/b&gt;ext &lt;b&gt;M&lt;/b&gt;arkup &lt;b&gt;L&lt;/b&gt;anguage, was created by Tim Berners-Lee,
+            the father of the World Wide Web. Initially, HTML was a simple language designed to share scientific
+            documents, but it had a grand dream: to create a universal system that anyone could use
+            to share information online.&lt;/p&gt;
+        &lt;p&gt;By 1995, HTML 2.0 emerged as the first official standard. It introduced key features like:&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Forms,&lt;/li&gt;
+            &lt;li&gt;Tables, and&lt;/li&gt;
+            &lt;li&gt;Basic multimedia support.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;The late 1990s saw the release of HTML 4.01, adding support for stylesheets (aka &lt;i&gt;CSS&lt;/i&gt;) and
+            improved accessibility (like alt text).&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section id="section2"&gt;
+        &lt;h2&gt;HTML5: The Web's Modern Foundation&lt;/h2&gt;
+        &lt;p&gt;The real revolution began in 2008 with the development of &lt;b&gt;HTML5&lt;/b&gt;.
+            Officially standardized in 2014, HTML5 was designed to meet the demands of modern web applications.&lt;/p&gt;
+        &lt;p&gt;HTML5 introduced a host of new features, including:&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Semantic tags (like &lt;code&gt;&lt;header&gt;&lt;/code&gt; and &lt;code&gt;&lt;footer&gt;&lt;/code&gt;),
+                improving SEO and accessibility,&lt;/li&gt;
+            &lt;li&gt;Native multimedia support (like &lt;code&gt;&lt;video&gt;&lt;/code&gt; and &lt;code&gt;&lt;audio&gt;&lt;/code&gt;),&lt;/li&gt;
+            &lt;li&gt;and APIs for offline storage, geolocation, and more.&lt;/li&gt;
+            &lt;li&gt;Improved semantics.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;HTML5 marked the web's transition from a document-based medium to an application platform, enabling
+        the creation of rich, interactive experiences.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section id="section3"&gt;
+        &lt;h2 class="section__title"&gt;CSS: The Web's Visual Language&lt;/h2&gt;
+        &lt;p&gt;CSS, or &lt;b&gt;C&lt;/b&gt;ascading &lt;b&gt;S&lt;/b&gt;tyle &lt;b&gt;S&lt;/b&gt;heets, was introduced in 1996 by the W3C to address
+            a growing need: separating a webpage's content from its design. Before CSS, styling was embedded
+            directly within HTML, making it difficult to manage and update websites. (Interestingly,
+            frameworks like Tailwind seem to be regressing back to the old ways of inline styles,
+            albeit with a better setup.)&lt;/p&gt;
+        &lt;ol&gt;
+            &lt;li&gt;&lt;b&gt;CSS1&lt;/b&gt; &lt;i&gt;(1996)&lt;/i&gt; offered basic styling capabilities- fonts, colors, and spacing. It was
+            a revolutionary step but limited in scope.&lt;/li&gt;
+            &lt;li&gt;&lt;b&gt;CSS2&lt;/b&gt; &lt;i&gt;(1998)&lt;/i&gt; expanded capabilities significantly, adding support for absolute
+                positioning, z-index, and media types. It enabled complex layouts and greater
+                design flexibility.&lt;/li&gt;
+            &lt;li&gt;In &lt;i&gt;2011&lt;/i&gt;, &lt;b&gt;CSS3&lt;/b&gt; introduced a modular approach, allowing individual features
+                to evolve independently. Key innovations included flexbox and grid layouts,
+                media queries, transitions, and animations.&lt;br&gt;
+                CSS3 empowered designers to create visually stunning, highly responsive &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/section&gt;
+    &lt;section id="section4"&gt;
+        &lt;h2 class="section__title"&gt;A Convergence of Power&lt;/h2&gt;
+        &lt;p&gt;Today, HTML and CSS continue to evolve alongside the web's dynamic needs. They are supported by
+            a vast ecosystem of tools, frameworks, and libraries.&lt;/p&gt;
+        &lt;p&gt;The evolution of HTML and CSS is not just a tale of technological advancements–it's a testament
+        to how collaboration and innovation can reshape the way we connect and interact with the world. HTML and CSS
+        have grown from simple tools into the cornerstones of a digital age, shaping how we experience the internet
+        today.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section id="section5"&gt;
+        &lt;h2 class="section__title"&gt;Demo&lt;/h2&gt;
+        &lt;h3&gt;HTML&lt;/h3&gt;
+        &lt;p style="color:darkred"&gt;to Be CONTINUED&lt;/p&gt;
+    &lt;/section&gt;
+
+&lt;/main&gt;
+&lt;footer class="footer"&gt;
+        &lt;p&gt;Made with &lt;3 by &lt;a href="https://github.com/acemavrick" class="github-link"&gt;acemavrick&lt;/a&gt; and
+        &lt;a href="https://github.com/tvumcc" class="github-link"&gt;tvumcc&lt;/a&gt;&lt;/p&gt;
+&lt;/footer&gt;
+&lt;/body&gt;</pre>
