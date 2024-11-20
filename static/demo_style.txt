@@ -1,1 +1,113 @@
-html&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;animation:&nbsp;cycleBackground&nbsp;120s&nbsp;infinite;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-blend-mode:&nbsp;saturation;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-size:&nbsp;cover;<br>}<br><br>body&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;font-family:&nbsp;Arial,&nbsp;sans-serif;<br>&nbsp;&nbsp;&nbsp;&nbsp;background-color:&nbsp;rgba(15,&nbsp;23,&nbsp;42,&nbsp;0.29);<br>&nbsp;&nbsp;&nbsp;&nbsp;background-size:&nbsp;cover;<br>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#18181B;<br>&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;0;<br>&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;0;<br>&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;100%;<br>}<br><br>@keyframes&nbsp;cycleBackground&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linear-gradient(123deg,&nbsp;rgba(103,&nbsp;232,&nbsp;249,&nbsp;1),&nbsp;rgba(255,&nbsp;255,&nbsp;255,&nbsp;.0)),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#16A34A&nbsp;no-repeat;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;20%&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linear-gradient(123deg,&nbsp;rgba(103,&nbsp;232,&nbsp;249,&nbsp;1),&nbsp;rgba(255,&nbsp;255,&nbsp;255,&nbsp;.0)),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgba(255,&nbsp;105,&nbsp;180,&nbsp;1)&nbsp;no-repeat;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;40%&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linear-gradient(123deg,&nbsp;rgba(103,&nbsp;232,&nbsp;249,&nbsp;1),&nbsp;rgba(255,&nbsp;255,&nbsp;255,&nbsp;.0)),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgba(250,&nbsp;128,&nbsp;114,&nbsp;1)&nbsp;no-repeat;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;60%&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linear-gradient(123deg,&nbsp;rgba(103,&nbsp;232,&nbsp;249,&nbsp;1),&nbsp;rgba(255,&nbsp;255,&nbsp;255,&nbsp;.0)),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#4ADE80&nbsp;no-repeat;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;80%&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*linear-gradient(-123deg,&nbsp;rgba(255,&nbsp;105,&nbsp;180,&nbsp;0.6),&nbsp;rgba(250,&nbsp;128,&nbsp;114,&nbsp;0.6)),*/<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linear-gradient(123deg,&nbsp;rgba(103,&nbsp;232,&nbsp;249,&nbsp;1),&nbsp;rgba(255,&nbsp;255,&nbsp;255,&nbsp;.0)),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#A855F7&nbsp;no-repeat;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*linear-gradient(-123deg,&nbsp;rgba(255,&nbsp;105,&nbsp;180,&nbsp;0.6),&nbsp;rgba(250,&nbsp;128,&nbsp;114,&nbsp;0.6)),*/<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linear-gradient(123deg,&nbsp;rgba(103,&nbsp;232,&nbsp;249,&nbsp;1),&nbsp;rgba(255,&nbsp;255,&nbsp;255,&nbsp;.0)),<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#16A34A&nbsp;no-repeat;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}<br><br>header&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;black;<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align:&nbsp;center;<br>&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;.1em;<br>&nbsp;&nbsp;&nbsp;&nbsp;text-shadow:&nbsp;0&nbsp;0&nbsp;10px&nbsp;white;<br>&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;radial-gradient(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ellipse&nbsp;120%&nbsp;35%&nbsp;at&nbsp;center,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*ellipse&nbsp;at&nbsp;center,*/<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgba(255,&nbsp;255,&nbsp;255,&nbsp;0.74)&nbsp;5%,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transparent&nbsp;50%);<br>}<br><br>main&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;0&nbsp;1.5em&nbsp;1em&nbsp;1.5em;<br>&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;.5em&nbsp;1em&nbsp;.5em&nbsp;1em;<br>&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;rgba(255,&nbsp;255,&nbsp;255,&nbsp;0.13);<br>&nbsp;&nbsp;&nbsp;&nbsp;box-shadow:&nbsp;0&nbsp;0&nbsp;10px&nbsp;rgba(0,&nbsp;0,&nbsp;0,&nbsp;0.2);<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius:&nbsp;10px;<br>}<br><br>section&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;0;<br>}<br><br>.section__title&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;font-size:&nbsp;1.5em;<br>&nbsp;&nbsp;&nbsp;&nbsp;font-weight:&nbsp;bold;<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-top:&nbsp;.2em;<br>&nbsp;&nbsp;&nbsp;&nbsp;margin-bottom:&nbsp;-.1em;<br>}<br><br>.code-block&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;rgba(255,&nbsp;255,&nbsp;255,&nbsp;0.74);<br>&nbsp;&nbsp;&nbsp;&nbsp;border-radius:&nbsp;10px;<br>&nbsp;&nbsp;&nbsp;&nbsp;box-shadow:&nbsp;0&nbsp;0&nbsp;10px&nbsp;rgba(0,&nbsp;0,&nbsp;0,&nbsp;0.1);<br>&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;1em&nbsp;0;<br>&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;1em;<br>}<br><br>footer&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;text-align:&nbsp;center;<br>&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;1em&nbsp;1em&nbsp;.1em;<br>}<br><br>.github-link&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#0e0e49;<br>&nbsp;&nbsp;&nbsp;&nbsp;text-decoration:&nbsp;none;<br>&nbsp;&nbsp;&nbsp;&nbsp;text-shadow:&nbsp;0&nbsp;0&nbsp;4px&nbsp;#ffffff;<br>}
+<pre>html {
+    animation: cycleBackground 120s infinite;
+    background-blend-mode: saturation;
+    background-size: cover;
+}
+
+body {
+    background:
+        linear-gradient(to top right, rgba(255, 105, 180, .7), transparent),
+            linear-gradient(to bottom right, rgba(103, 232, 249, .7), transparent);
+    /*background: black;*/
+    font-family: "Garamond", sans-serif;
+    background-size: cover;
+    color: #18181B;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.body_container {
+    background-color: rgba(15, 23, 42, 0.06);
+}
+
+@keyframes cycleBackground {
+    from {
+        background: #4ADE80 no-repeat;
+    }
+
+    20% {
+        background:
+                rgba(255, 105, 180, 1) no-repeat;
+    }
+
+    40% {
+        background:
+                rgba(250, 128, 114, 1) no-repeat;
+    }
+
+    60% {
+        background:
+                #67E8F9 no-repeat;
+    }
+
+    80% {
+        background:
+                #A855F7 no-repeat;
+    }
+
+    to {
+        background:
+                #4ADE80 no-repeat;
+    }
+}
+
+header {
+    color: black;
+    text-align: center;
+    padding: .1em;
+    text-shadow: 0 0 10px white;
+    background: radial-gradient(
+            ellipse 120% 35% at center,
+            /*ellipse at center,*/
+            rgba(255, 255, 255, 0.74) 5%,
+            transparent 50%);
+}
+
+main {
+    margin: 0 1.5em 1em 1.5em;
+    padding: .5em 1em .5em 1em;
+    background: rgba(255, 255, 255, 0.13);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+section {
+    padding: .2em;
+}
+
+.section__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: .1em;
+    margin-bottom: -.2em;
+    padding: .1em .1em .1em .4em;
+    margin-left: -.4em;
+    border-radius: 7px 0 0 7px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.30), transparent);
+}
+
+.code-block {
+    background: #020617;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2em 2em 2em 0;
+    padding: .5em;
+    font-family: "Courier New", monospace;
+    width: 99%;
+    align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em 1em .1em;
+}
+
+.github-link {
+    color: #0e0e49;
+    text-decoration: none;
+    text-shadow: 0 0 4px #ffffff;
+}</pre>

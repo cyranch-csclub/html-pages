@@ -5,8 +5,11 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgba(15, 23, 42, 0.29);
+    background:
+        linear-gradient(to top right, rgba(255, 105, 180, .7), transparent),
+            linear-gradient(to bottom right, rgba(103, 232, 249, .7), transparent);
+    /*background: black;*/
+    font-family: "Garamond", sans-serif;
     background-size: cover;
     color: #18181B;
     margin: 0;
@@ -14,43 +17,38 @@ body {
     width: 100%;
 }
 
+.body_container {
+    background-color: rgba(15, 23, 42, 0.06);
+}
+
 @keyframes cycleBackground {
     from {
-        background:
-                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
-                 #16A34A no-repeat;
+        background: #4ADE80 no-repeat;
     }
 
     20% {
         background:
-                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
                 rgba(255, 105, 180, 1) no-repeat;
     }
 
     40% {
         background:
-                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
                 rgba(250, 128, 114, 1) no-repeat;
     }
 
     60% {
         background:
-                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
-                #4ADE80 no-repeat;
+                #67E8F9 no-repeat;
     }
 
     80% {
         background:
-            /*linear-gradient(-123deg, rgba(255, 105, 180, 0.6), rgba(250, 128, 114, 0.6)),*/
-                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
                 #A855F7 no-repeat;
     }
 
     to {
         background:
-            /*linear-gradient(-123deg, rgba(255, 105, 180, 0.6), rgba(250, 128, 114, 0.6)),*/
-                linear-gradient(123deg, rgba(103, 232, 249, 1), rgba(255, 255, 255, .0)),
-                #16A34A no-repeat;
+                #4ADE80 no-repeat;
     }
 }
 
@@ -72,26 +70,36 @@ main {
     background: rgba(255, 255, 255, 0.13);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    backdrop-filter: blur(5px);
 }
 
 section {
-    padding: 0;
+    padding: .2em;
 }
 
 .section__title {
     font-size: 1.5em;
     font-weight: bold;
-    margin-top: .2em;
-    margin-bottom: -.1em;
+    margin-top: .1em;
+    margin-bottom: -.2em;
+    padding: .1em .1em .1em .4em;
+    margin-left: -.4em;
+    border-radius: 7px 0 0 7px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.30), transparent);
 }
 
 .code-block {
-    background: rgba(255, 255, 255, 0.74);
-    border-radius: 10px;
+    background: #020617;
+    color: white;
+    border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1em 0;
-    padding: 1em;
+    margin: 2em 2em 2em 0;
+    padding: .5em;
+    font-family: "Courier New", monospace;
+    width: 99%;
+    align: center;
 }
+
 
 footer {
     text-align: center;

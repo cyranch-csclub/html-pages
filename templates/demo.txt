@@ -7,79 +7,197 @@
     &lt;title&gt;HTML + CSS&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;header class="header"&gt;
-    &lt;h1 class="header__title"&gt;HTML and CSS - The Foundations of the Internet&lt;/h1&gt;
-&lt;/header&gt;
-&lt;nav class="nav"&gt;
-&lt;/nav&gt;
-&lt;main&gt;
-    &lt;section id="section1"&gt;
-        &lt;h2 class="section__title"&gt;HTML: The Backbone of the Web&lt;/h2&gt;
-        &lt;p&gt;HTML, or &lt;b&gt;H&lt;/b&gt;yper&lt;b&gt;T&lt;/b&gt;ext &lt;b&gt;M&lt;/b&gt;arkup &lt;b&gt;L&lt;/b&gt;anguage, was created by Tim Berners-Lee,
-            the father of the World Wide Web. Initially, HTML was a simple language designed to share scientific
-            documents, but it had a grand dream: to create a universal system that anyone could use
-            to share information online.&lt;/p&gt;
-        &lt;p&gt;By 1995, HTML 2.0 emerged as the first official standard. It introduced key features like:&lt;/p&gt;
-        &lt;ul&gt;
-            &lt;li&gt;Forms,&lt;/li&gt;
-            &lt;li&gt;Tables, and&lt;/li&gt;
-            &lt;li&gt;Basic multimedia support.&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;p&gt;The late 1990s saw the release of HTML 4.01, adding support for stylesheets (aka &lt;i&gt;CSS&lt;/i&gt;) and
-            improved accessibility (like alt text).&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;section id="section2"&gt;
-        &lt;h2&gt;HTML5: The Web's Modern Foundation&lt;/h2&gt;
-        &lt;p&gt;The real revolution began in 2008 with the development of &lt;b&gt;HTML5&lt;/b&gt;.
-            Officially standardized in 2014, HTML5 was designed to meet the demands of modern web applications.&lt;/p&gt;
-        &lt;p&gt;HTML5 introduced a host of new features, including:&lt;/p&gt;
-        &lt;ul&gt;
-            &lt;li&gt;Semantic tags (like &lt;code&gt;&lt;header&gt;&lt;/code&gt; and &lt;code&gt;&lt;footer&gt;&lt;/code&gt;),
-                improving SEO and accessibility,&lt;/li&gt;
-            &lt;li&gt;Native multimedia support (like &lt;code&gt;&lt;video&gt;&lt;/code&gt; and &lt;code&gt;&lt;audio&gt;&lt;/code&gt;),&lt;/li&gt;
-            &lt;li&gt;and APIs for offline storage, geolocation, and more.&lt;/li&gt;
-            &lt;li&gt;Improved semantics.&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;p&gt;HTML5 marked the web's transition from a document-based medium to an application platform, enabling
-        the creation of rich, interactive experiences.&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;section id="section3"&gt;
-        &lt;h2 class="section__title"&gt;CSS: The Web's Visual Language&lt;/h2&gt;
-        &lt;p&gt;CSS, or &lt;b&gt;C&lt;/b&gt;ascading &lt;b&gt;S&lt;/b&gt;tyle &lt;b&gt;S&lt;/b&gt;heets, was introduced in 1996 by the W3C to address
-            a growing need: separating a webpage's content from its design. Before CSS, styling was embedded
-            directly within HTML, making it difficult to manage and update websites. (Interestingly,
-            frameworks like Tailwind seem to be regressing back to the old ways of inline styles,
-            albeit with a better setup.)&lt;/p&gt;
-        &lt;ol&gt;
-            &lt;li&gt;&lt;b&gt;CSS1&lt;/b&gt; &lt;i&gt;(1996)&lt;/i&gt; offered basic styling capabilities- fonts, colors, and spacing. It was
-            a revolutionary step but limited in scope.&lt;/li&gt;
-            &lt;li&gt;&lt;b&gt;CSS2&lt;/b&gt; &lt;i&gt;(1998)&lt;/i&gt; expanded capabilities significantly, adding support for absolute
-                positioning, z-index, and media types. It enabled complex layouts and greater
-                design flexibility.&lt;/li&gt;
-            &lt;li&gt;In &lt;i&gt;2011&lt;/i&gt;, &lt;b&gt;CSS3&lt;/b&gt; introduced a modular approach, allowing individual features
-                to evolve independently. Key innovations included flexbox and grid layouts,
-                media queries, transitions, and animations.&lt;br&gt;
-                CSS3 empowered designers to create visually stunning, highly responsive &lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/section&gt;
-    &lt;section id="section4"&gt;
-        &lt;h2 class="section__title"&gt;A Convergence of Power&lt;/h2&gt;
-        &lt;p&gt;Today, HTML and CSS continue to evolve alongside the web's dynamic needs. They are supported by
-            a vast ecosystem of tools, frameworks, and libraries.&lt;/p&gt;
-        &lt;p&gt;The evolution of HTML and CSS is not just a tale of technological advancements–it's a testament
-        to how collaboration and innovation can reshape the way we connect and interact with the world. HTML and CSS
-        have grown from simple tools into the cornerstones of a digital age, shaping how we experience the internet
-        today.&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;section id="section5"&gt;
-        &lt;h2 class="section__title"&gt;Demo&lt;/h2&gt;
-        &lt;h3&gt;HTML&lt;/h3&gt;
-        &lt;p style="color:darkred"&gt;to Be CONTINUED&lt;/p&gt;
-    &lt;/section&gt;
-
-&lt;/main&gt;
-&lt;footer class="footer"&gt;
+&lt;div class="body_container"&gt;
+    &lt;header class="header"&gt;
+        &lt;h1 class="header__title"&gt;HTML and CSS - The Foundations of the Internet&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;nav class="nav"&gt;
+    &lt;/nav&gt;
+    &lt;main&gt;
+        &lt;section id="section1"&gt;
+            &lt;h2 class="section__title"&gt;HTML: The Backbone of the Web&lt;/h2&gt;
+            &lt;p&gt;HTML, or &lt;b&gt;H&lt;/b&gt;yper&lt;b&gt;T&lt;/b&gt;ext &lt;b&gt;M&lt;/b&gt;arkup &lt;b&gt;L&lt;/b&gt;anguage, was created by Tim Berners-Lee,
+                the father of the World Wide Web. Initially, HTML was a simple language designed to share scientific
+                documents, but it had a grand dream: to create a universal system that anyone could use
+                to share information online.&lt;/p&gt;
+            &lt;p&gt;By 1995, HTML 2.0 emerged as the first official standard. It introduced key features like:&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Forms,&lt;/li&gt;
+                &lt;li&gt;Tables, and&lt;/li&gt;
+                &lt;li&gt;Basic multimedia support.&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;p&gt;The late 1990s saw the release of HTML 4.01, adding support for stylesheets (aka &lt;i&gt;CSS&lt;/i&gt;) and
+                improved accessibility (like alt text).&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section id="section2"&gt;
+            &lt;h2 class="section__title"&gt;HTML5: The Web's Modern Foundation&lt;/h2&gt;
+            &lt;p&gt;The real revolution began in 2008 with the development of &lt;b&gt;HTML5&lt;/b&gt;.
+                Officially standardized in 2014, HTML5 was designed to meet the demands of modern web applications.&lt;/p&gt;
+            &lt;p&gt;HTML5 introduced a host of new features, including:&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Semantic tags (like &lt;code&gt;&lt;header&gt;&lt;/code&gt; and &lt;code&gt;&lt;footer&gt;&lt;/code&gt;),
+                    improving SEO and accessibility,&lt;/li&gt;
+                &lt;li&gt;Native multimedia support (like &lt;code&gt;&lt;video&gt;&lt;/code&gt; and &lt;code&gt;&lt;audio&gt;&lt;/code&gt;),&lt;/li&gt;
+                &lt;li&gt;and APIs for offline storage, geolocation, and more.&lt;/li&gt;
+                &lt;li&gt;Improved semantics.&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;p&gt;HTML5 marked the web's transition from a document-based medium to an application platform, enabling
+                the creation of rich, interactive experiences.&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section id="section3"&gt;
+            &lt;h2 class="section__title"&gt;CSS: The Web's Visual Language&lt;/h2&gt;
+            &lt;p&gt;CSS, or &lt;b&gt;C&lt;/b&gt;ascading &lt;b&gt;S&lt;/b&gt;tyle &lt;b&gt;S&lt;/b&gt;heets, was introduced in 1996 by the W3C to address
+                a growing need: separating a webpage's content from its design. Before CSS, styling was embedded
+                directly within HTML, making it difficult to manage and update websites. (Interestingly,
+                frameworks like Tailwind seem to be regressing back to the old ways of inline styles,
+                albeit with a better setup.)&lt;/p&gt;
+            &lt;ol&gt;
+                &lt;li&gt;&lt;b&gt;CSS1&lt;/b&gt; &lt;i&gt;(1996)&lt;/i&gt; offered basic styling capabilities- fonts, colors, and spacing. It was
+                    a revolutionary step but limited in scope.&lt;/li&gt;
+                &lt;li&gt;&lt;b&gt;CSS2&lt;/b&gt; &lt;i&gt;(1998)&lt;/i&gt; expanded capabilities significantly, adding support for absolute
+                    positioning, z-index, and media types. It enabled complex layouts and greater
+                    design flexibility.&lt;/li&gt;
+                &lt;li&gt;In &lt;i&gt;2011&lt;/i&gt;, &lt;b&gt;CSS3&lt;/b&gt; introduced a modular approach, allowing individual features
+                    to evolve independently. Key innovations included flexbox and grid layouts,
+                    media queries, transitions, and animations.&lt;br&gt;
+                    CSS3 empowered designers to create visually stunning, highly responsive &lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/section&gt;
+        &lt;section id="section4"&gt;
+            &lt;h2 class="section__title"&gt;A Convergence of Power&lt;/h2&gt;
+            &lt;p&gt;Today, HTML and CSS continue to evolve alongside the web's dynamic needs. They are supported by
+                a vast ecosystem of tools, frameworks, and libraries.&lt;/p&gt;
+            &lt;p&gt;The evolution of HTML and CSS is not just a tale of technological advancements–it's a testament
+                to how collaboration and innovation can reshape the way we connect and interact with the world. HTML and CSS
+                have grown from simple tools into the cornerstones of a digital age, shaping how we experience the internet
+                today.&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section id="section5"&gt;
+            &lt;h2 class="section__title"&gt;Demo&lt;/h2&gt;
+            &lt;p&gt;This entire page serves as a demo. To get the html of this page, go to
+                &lt;a href="/demo/html" target="_blank"&gt;this page&lt;/a&gt;. For the CSS, go
+                &lt;a href="/demo/css" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;
+            &lt;h3&gt;HTML&lt;/h3&gt;
+            &lt;p&gt;In a HTML file (ending in &lt;code&gt;.html&lt;/code&gt;), there is always a basic structure:&lt;/p&gt;
+            &lt;div class="code-block"&gt;
+                &lt!--&nbspThis&nbspis&nbspa&nbspcomment&nbsp(both&nbspmultiline&nbspand&nbspsingle&nbspline&nbspcomments&nbspuse&nbspthis&nbspsyntax)&nbsp--&gt&lt;br&gt;
+                &lt!DOCTYPE&nbsphtml&gt&nbsp&lt;br&gt;
+                &lthtml&nbsplang="en"&gt&lt;br&gt;
+                &lthead&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&ltmeta&nbspcharset="UTF-8"&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&ltmeta&nbspname="viewport"&nbspcontent="width=device-width,&nbspinitial-scale=1.0"&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&ltlink&nbsprel="stylesheet"&nbsphref="/path/to/stylesheet.css"&gt&nbsp&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&lttitle&gtPage&nbspTitle&lt/title&gt&nbsp&lt;br&gt;
+                &lt/head&gt&lt;br&gt;
+                &ltstyle&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp/*&nbspCSS&nbspcode&nbspcan&nbspgo&nbsphere&nbspor&nbspin&nbspanother&nbspfile&nbspgoes&nbsphere&nbsp*/&lt;br&gt;
+                &lt/style&gt&lt;br&gt;
+                &ltscript&gt&nbsp&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp//&nbspJavaScript&nbspcode&nbspcan&nbspgo&nbsphere&nbspor&nbspin&nbspanother&nbspfile&lt;br&gt;
+                &lt/script&gt&lt;br&gt;
+                &ltbody&gt&nbsp&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&ltheader&gt&nbsp&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lth1&gtHeader&nbspTitle&lt/h1&gt&nbsp&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&lt/header&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&ltnav&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt!--&nbspNavigation&nbsplinks&nbspgo&nbsphere&nbsp--&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&lt/nav&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&ltmain&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltsection&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lth2&gtSection&nbspTitle&lt/h2&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp&gtSection&nbspcontent&nbspgoes&nbsphere&lt/p&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/section&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&lt/main&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&ltfooter&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp&gtFooter&nbspcontent&nbspgoes&nbsphere&lt/p&gt&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&lt/footer&gt&lt;br&gt;
+                &lt/body&gt&lt;br&gt;
+                &lt/html&gt
+            &lt;/div&gt;
+            &lt;p&gt;As you can see, HTML is built using &lt;b&gt;tags&lt;/b&gt;. Each tag tells the interpreter (browser) what is within it.
+                Tags are formatted like so:&lt;/p&gt;
+            &lt;code class="code-block"&gt;
+                &lttag [values]&gt Content &lt/tag&gt
+            &lt;/code&gt;
+            &lt;p&gt;There are a few simple tags that can get you started in HTML:&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Headings: &lt;code&gt;&lth1&gt&lt;/code&gt;, &lt;code&gt;&lth2&gt&lt;/code&gt;, &lt;code&gt;&lth3&gt&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;Paragraphs: &lt;code&gt;&ltp&gt&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;Links: &lt;code&gt;&lta href="{url}"&gt&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;Images: &lt;code&gt;&ltimg src="{src}"&gt&lt;/code&gt;&lt;/li&gt;
+                &lt;li&gt;Lists: &lt;code&gt;&ltol&gt&lt;/code&gt; (ordered/numbered list), &lt;code&gt;&ltul&gt&lt;/code&gt; (bulleted list),
+                    &lt;code&gt;&ltli&gt&lt;/code&gt; (list item)&lt;/li&gt;
+                &lt;li&gt;Organizational: &lt;code&gt;&ltdiv&gt&lt;/code&gt;, &lt;code&gt;&ltspan&gt&lt;/code&gt; (inline div)&lt;/li&gt;
+                &lt;li&gt;Text emphasis: &lt;code&gt;&ltb&gt&lt;/code&gt; for bold, &lt;code&gt;&lti&gt&lt;/code&gt; for italicized,
+                    &lt;code&gt;&ltu&gt&lt;/code&gt; for underlined&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;p&gt;There are many more tags than the ones listed, such as meta tags (header, main, section, and footer) and
+            other style tags (iframe, code). Many of those are used in this page.&lt;/p&gt;
+            &lt;p&gt;There are also tags that are necessary for a well-structured document, like &lt;code&gt;head&lt;/code&gt;,
+            &lt;code&gt;html&lt;/code&gt;, &lt;code&gt;!DOCTYPE&lt;/code&gt; and &lt;code&gt;body&lt;/code&gt;.&lt;/p&gt;
+            &lt;p&gt;Tags also have an &lt;b&gt;id&lt;/b&gt; or a &lt;b&gt;class&lt;/b&gt;, which are organizational indicators that are used
+            later in CSS styling.&lt;/p&gt;
+            &lt;h3&gt;CSS&lt;/h3&gt;
+            &lt;p&gt;CSS is a language that is used to style HTML. Usually, CSS is written in a separate file(s) and linked
+            in the document's head, but it can also be written in the document itself. CSS is made up of &lt;b&gt;selectors&lt;/b&gt;
+            and &lt;b&gt;properties&lt;/b&gt;. Selectors are used to target specific HTML elements, and properties are used to
+            style those elements.&lt;/p&gt;
+            &lt;p&gt;Here is an example of CSS:&lt;/p&gt;
+            &lt;div class="code-block"&gt;
+                /* This is a comment */&lt;br&gt;
+                h1 {&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbspcolor: blue;&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbspfont-size: 24px;&lt;br&gt;
+                }&lt;br&gt;
+                p {&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbspcolor: black;&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbspfont-size: 16px;&lt;br&gt;
+                }&lt;br&gt;
+                .class {&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbspcolor: red;&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbspfont-size: 20px;&lt;br&gt;
+                }&lt;br&gt;
+                #id {&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbspcolor: green;&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbspfont-size: 18px;&lt;br&gt;
+                }
+            &lt;/div&gt;
+            &lt;p&gt;As you can see, CSS is made up of selectors and properties. Selectors can be tags, classes, or ids.
+            Tags are selected by their tag name, classes are selected by a period followed by the class name, and ids
+            are selected by a hash followed by the id name. Properties are then applied to the selected elements.&lt;/p&gt;
+            &lt;p&gt;There are many properties that can be applied to elements, such as color, font-size, background-color,
+            and margin. There are also many more selectors that can be used, such as pseudo-classes and pseudo-elements.&lt;/p&gt;
+            &lt;p&gt;CSS can also contain &lt;b&gt;animations.&lt;/b&gt; An animation in CSS essentially tells the browser what it wants
+            certain properties to look like at certain times, and is placed on a selector through the &lt;b&gt;animation&lt;/b&gt;
+            property.&lt;/p&gt;
+            &lt;p&gt;Here is an example of a simple animation that changes the color of text over 10 seconds:&lt;/p&gt;
+            &lt;div class="code-block"&gt;
+                @keyframes colorchange {&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp0% {&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcolor: red;&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp}&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp100% {&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcolor: blue;&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbsp}&lt;br&gt;
+                }&lt;br&gt;
+                &lt;br&gt;
+                p {&lt;br&gt;
+                &nbsp&nbsp&nbsp&nbspanimation: colorchange 10s infinite;&lt;br&gt;
+                }
+            &lt;/div&gt;
+            &lt;h3&gt;Wrapping Up&lt;/h3&gt;
+            &lt;p&gt;HTML and CSS are the building blocks of the web. They are the foundation upon which all websites are built.
+            HTML is used to create the structure of a webpage, while CSS is used to style that structure. Together, they
+            allow developers to create beautiful, functional websites that are accessible to all users.&lt;/p&gt;
+            &lt;p&gt;As you continue to learn and grow as a developer, remember that HTML and CSS are just the
+            beginning. There is so much more to learn and explore in the world of web development. Keep pushing yourself
+            to learn new things and try new technologies. The web is constantly evolving, and there is always something
+            new to discover.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer class="footer"&gt;
         &lt;p&gt;Made with &lt;3 by &lt;a href="https://github.com/acemavrick" class="github-link"&gt;acemavrick&lt;/a&gt; and
-        &lt;a href="https://github.com/tvumcc" class="github-link"&gt;tvumcc&lt;/a&gt;&lt;/p&gt;
-&lt;/footer&gt;
+            &lt;a href="https://github.com/tvumcc" class="github-link"&gt;tvumcc&lt;/a&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/div&gt;
 &lt;/body&gt;</pre>
