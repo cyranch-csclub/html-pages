@@ -7,18 +7,18 @@ cursor = connection.cursor()
 cursor.execute("CREATE TABLE IF NOT EXISTS pages (name TEXT, code TEXT)")
 connection.commit()
 
+def html_to_plaintext(html):
+    return "<pre>"+html.replace("<", "&lt;").replace(">", "&gt;")+"</pre>"
+
+
 # build the raw HTML code of the demo page and save it as a text file (demo.html)
 # the goal is to make the raw HTML code of the demo page accessible to the user
 with (open("templates/demo.txt", "w")) as f:
-    f.write(open("templates/demo.html").read().replace("<", "&lt;")
-            .replace(">", "&gt;").replace("\n", "<br>")
-            .replace(" ", "&nbsp;"))
+    f.write(html_to_plaintext(open("templates/demo.html").read()))
 
 # same with css
 with (open("static/demo_style.txt", "w")) as f:
-    f.write(open("static/demo_style.css").read().replace("<", "&lt;")
-            .replace(">", "&gt;").replace("\n", "<br>")
-            .replace(" ", "&nbsp;"))
+    f.write(html_to_plaintext(open("static/demo_style.css").read()))
 
 @app.route("/")
 def main():
@@ -26,6 +26,7 @@ def main():
     cur = con.cursor()
     page_list = cur.execute("SELECT name, rowid FROM pages").fetchall()
     return render_template("index.html", pages=page_list)
+
 
 @app.route("/demo")
 @app.route("/demo/")
@@ -63,16 +64,17 @@ def submit_file(name, code):
     cur.execute("INSERT INTO pages VALUES(?, ?)", (name, code))
     con.commit()
 
-@app.route("/page/<int:id>")
-def page(id):
+@app.route("/page/<int:num>")
+def page(num):
     con = sqlite3.connect("main.db")
     cur = con.cursor()
-    code = cur.execute("SELECT code FROM pages WHERE rowid=?", (id,)).fetchone()
+    code = cur.execute("SELECT code FROM pages WHERE rowid=?", (num,)).fetchone()
     return code[0]
 
-@app.route("/raw/<int:id>")
-def raw(id):
+@app.route("/page/<int:num>/raw")
+@app.route("/raw/<int:num>")
+def raw(num):
     con = sqlite3.connect("main.db")
     cur = con.cursor()
-    code = cur.execute("SELECT code FROM pages WHERE rowid=?", (id,)).fetchone()
-    return f"<pre>{code[0]}</pre>"
+    code = cur.execute("SELECT code FROM pages WHERE rowid=?", (num,)).fetchone()
+    return html_to_plaintext(code[0])
