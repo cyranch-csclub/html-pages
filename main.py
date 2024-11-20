@@ -2,6 +2,10 @@ from flask import Flask, render_template, request, url_for, redirect
 import sqlite3
 
 app = Flask(__name__)
+connection = sqlite3.connect("main.db")
+cursor = connection.cursor()
+cursor.execute("CREATE TABLE IF NOT EXISTS pages (name TEXT, code TEXT)")
+connection.commit()
 
 @app.route("/")
 def main():
@@ -14,17 +18,14 @@ def main():
 def submit():
     message = ""
     if (request.method == "POST"):
-        if request.form["name"] == "":
-            message = "name field is empty"
-        else:
-            name = request.form["name"]
-            code = request.form["code"]
-            print(code)
+        name = request.form["name"]
+        code = request.form["code"]
+        print(code)
 
-            submit_file(name, code)
-            print(code)
+        submit_file(name, code)
+        print(code)
 
-            return redirect(url_for("main"))
+        return redirect(url_for("main"))
     return render_template("submit.html", message=message)
 
 def submit_file(name, code):
@@ -40,3 +41,10 @@ def page(id):
     cur = con.cursor()
     code = cur.execute("SELECT code FROM pages WHERE rowid=?", (id,)).fetchone()
     return code[0]
+
+@app.route("/raw/<int:id>")
+def raw(id):
+    con = sqlite3.connect("main.db")
+    cur = con.cursor()
+    code = cur.execute("SELECT code FROM pages WHERE rowid=?", (id,)).fetchone()
+    return f"<pre>{code[0]}</pre>"

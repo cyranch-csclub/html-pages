@@ -32,7 +32,7 @@
                     <div class="flex flex-row justify-center items-center m-3">
                         <textarea id="code-area" name="code" hidden></textarea>
                         <label for="name" class="text-slate-300">Your Name:</label>
-                        <input type="text" name="name" id="name" class="bg-slate-500 border-slate-900 border-2 rounded"><br>
+                        <input type="text" name="name" id="name" class="bg-slate-500 border-slate-900 border-2 rounded" required pattern="\S(.*\S)?"><br>
                         <input type="submit" value="Submit File" class="font-mono rounded text-zinc-800 bg-emerald-300 p-2 m-2 hover:scale-105">
                     </div>
                 </form>
