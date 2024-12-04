@@ -1,7 +1,10 @@
 from flask import Flask, render_template, request, url_for, redirect
+from werkzeug.middleware.proxy_fix import ProxyFix
 import sqlite3
 
 app = Flask(__name__)
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
+
 connection = sqlite3.connect("main.db")
 cursor = connection.cursor()
 cursor.execute("CREATE TABLE IF NOT EXISTS pages (name TEXT, code TEXT)")
