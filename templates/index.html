@@ -7,17 +7,21 @@
     <body class="bg-slate-800">
         <div class="flex flex-col justify-center items-center font-mono">
             <h1 class="text-emerald-300 text-5xl pt-5">CRCS Club HTML Pages</h1>
-            <h2 class="text-emerald-300">11/20/2024</h2>
+            <h2 class="text-emerald-300">12/3/2024 Meeting</h2>
             <a href="/demo" target="_blank" class="font-mono rounded text-zinc-800 bg-emerald-300 p-2 m-3 hover:scale-105">Open Demo</a>
             <a href="/submit" target="_blank" class="font-mono rounded text-zinc-800 bg-emerald-300 p-2 m-3 hover:scale-105">Make your page!</a>
             
             <div class="flex flex-col justify-center items-center">
                 <h2 class="text-emerald-300 text-2xl">Member Pages</h2>
-                <ul class="text-slate-300">
+                <table class="text-slate-300 table-auto border-collapse border-spacing-x-5">
                 {% for page in pages %}
-                    <li><a href="/page/{{ page[1] }}" class="underline">{{ page[0] }}</a></li>
+                    <tr>
+                        <td class="px-4 py-1"><p>{{ page[0] }}</p></td>
+                        <td class="px-4"><a href="/page/{{ page[1] }}" class="underline text-sky-600">View Page</a></td>
+                        <td class="px-4"><a href="/raw/{{ page[1] }}" class="underline text-sky-600">View Code</a></td>
+                    </tr>
                 {% endfor %}
-                </ul>
+                </table>
             </div>
         </div>
     </body>

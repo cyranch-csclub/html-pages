@@ -78,3 +78,6 @@ def raw(num):
     cur = con.cursor()
     code = cur.execute("SELECT code FROM pages WHERE rowid=?", (num,)).fetchone()
     return html_to_plaintext(code[0])
+
+if __name__ == "__main__":
+    app.run(port=3000)
