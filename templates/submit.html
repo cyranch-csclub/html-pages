@@ -23,6 +23,7 @@
                 <div class="flex gap-3 justify-center mt-6">
                     <a href="/" class="rounded text-zinc-900 bg-emerald-300 px-4 py-2 shadow-sm ring-1 ring-emerald-300/40 hover:shadow-lg hover:scale-[1.02] transition">Back to pages</a>
                     <button id="refresh-button" class="rounded text-zinc-900 bg-emerald-300 px-4 py-2 shadow-sm ring-1 ring-emerald-300/40 hover:shadow-lg hover:scale-[1.02] transition">Recompile</button>
+                    <button id="toggle-live" aria-pressed="true" class="rounded text-zinc-900 bg-emerald-300 px-4 py-2 shadow-sm ring-1 ring-emerald-300/40 hover:shadow-lg hover:scale-[1.02] transition">Live Update: On</button>
                 </div>
                 <p class="mt-2">{{message}}</p>
             </header>
@@ -51,9 +52,11 @@
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const refresh_button = document.getElementById("refresh-button")
+                const toggle_live = document.getElementById("toggle-live")
                 const html_view = document.getElementById("html-view")
                 const form = document.getElementById("code-form")
                 const code_area = document.getElementById("code-area")
+                let liveUpdateEnabled = true
 
                 const editor = CodeMirror.fromTextArea(document.getElementById('code-editor'), {
                     lineNumbers: true,
@@ -70,10 +73,36 @@
 
                 editor.setValue(`<html lang="en">\n\t<head>\n\t\t<title>My Page</title>\n\t</head>\n\t<body style='background-color:rebeccapurple'>\n\t\t<p>hello world!</p>\n\t</body>\n</html>`)
                 html_view.setAttribute("srcdoc", editor.getValue())
+                // debounce helper
+                const debounce = (fn, delay) => {
+                    let t
+                    return (...args) => {
+                        clearTimeout(t)
+                        t = setTimeout(() => fn.apply(null, args), delay)
+                    }
+                }
+                // update preview (debounced)
+                const updatePreview = () => {
+                    html_view.setAttribute("srcdoc", editor.getValue())
+                }
+                const debouncedUpdate = debounce(updatePreview, 150)
+                // auto-update preview as you type (toggleable)
+                editor.on("change", () => {
+                    if (!liveUpdateEnabled) return
+                    debouncedUpdate()
+                })
 
                 refresh_button.addEventListener("click", (event) => {
                     console.log(editor.getValue())
                     html_view.setAttribute("srcdoc", editor.getValue())
+                })
+
+                // toggle live updating
+                toggle_live.addEventListener("click", () => {
+                    liveUpdateEnabled = !liveUpdateEnabled
+                    toggle_live.setAttribute("aria-pressed", String(liveUpdateEnabled))
+                    toggle_live.textContent = liveUpdateEnabled ? "Live Update: On" : "Live Update: Off"
+                    if (liveUpdateEnabled) debouncedUpdate()
                 })
 
                 form.addEventListener("submit", (event) => {
