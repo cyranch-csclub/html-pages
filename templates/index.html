@@ -4,25 +4,43 @@
         <title>CRCS Club HTML Pages</title>
         <link href="/static/output.css" rel="stylesheet"> 
     </head>
-    <body class="bg-slate-800">
-        <div class="flex flex-col justify-center items-center font-mono">
-            <h1 class="text-emerald-300 text-5xl pt-5">CRCS Club HTML Pages</h1>
-            <h2 class="text-emerald-300">12/3/2024 Meeting</h2>
-            <a href="/demo" target="_blank" class="font-mono rounded text-zinc-800 bg-emerald-300 p-2 m-3 hover:scale-105">Open Demo</a>
-            <a href="/submit" target="_blank" class="font-mono rounded text-zinc-800 bg-emerald-300 p-2 m-3 hover:scale-105">Make your page!</a>
-            
-            <div class="flex flex-col justify-center items-center">
-                <h2 class="text-emerald-300 text-2xl">Member Pages</h2>
-                <table class="text-slate-300 table-auto border-collapse border-spacing-x-5">
-                {% for page in pages %}
-                    <tr>
-                        <td class="px-4 py-1"><p>{{ page[0] }}</p></td>
-                        <td class="px-4"><a href="/page/{{ page[1] }}" class="underline text-sky-600">View Page</a></td>
-                        <td class="px-4"><a href="/raw/{{ page[1] }}" class="underline text-sky-600">View Code</a></td>
-                    </tr>
-                {% endfor %}
-                </table>
+    <body class="bg-slate-800 min-h-screen text-slate-200 antialiased">
+        <div class="flex flex-col items-center font-mono max-w-5xl mx-auto px-4">
+            <header class="w-full text-center pt-8 pb-4">
+                <h1 class="text-5xl sm:text-6xl leading-tight font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-sky-400 mb-2">CRCS Club HTML Pages</h1>
+                <h2 class="text-emerald-300 opacity-90 mt-3">08/27/2025 Meeting</h2>
+            </header>
+
+            <div class="flex gap-3 flex-wrap justify-center mb-8">
+                <a href="/demo" target="_blank" class="rounded text-zinc-900 bg-emerald-300 px-4 py-2 shadow-sm ring-1 ring-emerald-300/40 hover:shadow-lg hover:scale-[1.02] transition">Open Demo</a>
+                <a href="/submit" target="_blank" class="rounded text-zinc-900 bg-emerald-300 px-4 py-2 shadow-sm ring-1 ring-emerald-300/40 hover:shadow-lg hover:scale-[1.02] transition">Make your page!</a>
             </div>
+
+            <section class="w-full">
+                <div class="rounded-xl border border-slate-700/70 bg-slate-900/40 backdrop-blur p-4 sm:p-6 shadow-lg">
+                    <h2 class="text-emerald-300 text-2xl mb-4">Member Pages</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-slate-200">
+                            <thead>
+                                <tr class="text-slate-300/80">
+                                    <th class="text-left px-4 py-2 font-medium">Name</th>
+                                    <th class="text-left px-4 py-2 font-medium">Page</th>
+                                    <th class="text-left px-4 py-2 font-medium">Code</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-700/60">
+                            {% for page in pages %}
+                                <tr class="hover:bg-slate-800/60 transition-colors">
+                                    <td class="px-4 py-2"><p>{{ page[0] }}</p></td>
+                                    <td class="px-4 py-2"><a href="/page/{{ page[1] }}" class="text-sky-400 underline decoration-sky-400/40 hover:text-emerald-300">View Page</a></td>
+                                    <td class="px-4 py-2"><a href="/raw/{{ page[1] }}" class="text-sky-400 underline decoration-sky-400/40 hover:text-emerald-300">View Code</a></td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
         </div>
     </body>
 </html>

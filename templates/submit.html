@@ -14,33 +14,38 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/javascript/javascript.min.js"></script>
 
     </head>
-    <body class="bg-slate-800">
-        <div class="flex flex-col justify-center items-center font-mono">
-            <h1 class="text-emerald-300 text-5xl pt-5">HTML Playground</h1>
-            <p class="text-emerald-300">Try adding CSS and Javascript with style and script tags!</p>
+    <body class="bg-slate-800 min-h-screen text-slate-200 antialiased">
+        <div class="flex flex-col font-mono min-h-screen w-full px-4">
+            <header class="w-full text-center pt-8 pb-4">
+                <h1 class="text-5xl sm:text-6xl leading-normal font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-sky-400">HTML Playground</h1>
+                <p class="text-emerald-300/90 mt-3">Try adding CSS and Javascript with style and script tags!</p>
 
-            <a href="/" class="font-mono rounded text-zinc-800 bg-emerald-300 p-2 m-6 hover:scale-105">Back to pages</a>
-            <p>{{message}}</p>
-            <button id="refresh-button" class="bg-emerald-300 p-2 rounded hover:scale-105">Recompile</button>
-        </div>
-        <div class="flex flex-col font-mono">
-            <div class="flex flex-row justify-center items-center">
-                <form enctype="multipart/form-data" action="/submit" method="post" id="code-form">
-                    <div class="flex flex-row justify-center items-center m-3">
+                <div class="flex gap-3 justify-center mt-6">
+                    <a href="/" class="rounded text-zinc-900 bg-emerald-300 px-4 py-2 shadow-sm ring-1 ring-emerald-300/40 hover:shadow-lg hover:scale-[1.02] transition">Back to pages</a>
+                    <button id="refresh-button" class="rounded text-zinc-900 bg-emerald-300 px-4 py-2 shadow-sm ring-1 ring-emerald-300/40 hover:shadow-lg hover:scale-[1.02] transition">Recompile</button>
+                </div>
+                <p class="mt-2">{{message}}</p>
+            </header>
+
+            <section class="w-full flex-1 flex">
+                <div class="rounded-xl border border-slate-700/70 bg-slate-900/40 backdrop-blur p-4 sm:p-6 shadow-lg flex-1 flex flex-col">
+                    <form enctype="multipart/form-data" action="/submit" method="post" id="code-form" class="flex flex-col gap-3 sm:flex-row sm:items-center mb-4">
                         <textarea id="code-area" name="code" hidden></textarea>
                         <label for="name" class="text-slate-300">Your Name:</label>
-                        <input type="text" name="name" id="name" class="bg-slate-500 border-slate-900 border-2 rounded" required pattern="\S(.*\S)?"><br>
-                        <input type="submit" value="Submit File" class="font-mono rounded text-zinc-800 bg-emerald-300 p-2 m-2 hover:scale-105">
-                    </div>
-                </form>
-            </div>
+                        <input type="text" name="name" id="name" class="bg-slate-700/60 border border-slate-600 rounded px-3 py-2 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-400" required pattern="\S(.*\S)?" placeholder="Jane Doe">
+                        <input type="submit" value="Submit File" class="rounded text-zinc-900 bg-emerald-300 px-4 py-2 shadow-sm ring-1 ring-emerald-300/40 hover:shadow-lg hover:scale-[1.02] transition">
+                    </form>
 
-            <div class="flex flex-row m-2">
-                <div class="editor-container basis-1/2 m-1 border-zinc-800 border-2" >
-                    <textarea id="code-editor"></textarea>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 flex-1 h-full">
+                        <div class="editor-container border border-slate-700/70 rounded-md overflow-hidden h-full">
+                            <textarea id="code-editor"></textarea>
+                        </div>
+                        <div class="border border-slate-700/70 rounded-md overflow-hidden bg-white h-full">
+                            <iframe id="html-view" class="w-full h-full"></iframe>
+                        </div>
+                    </div>
                 </div>
-                <iframe id="html-view" class="basis-1/2 m-1 border-2 border-zinc-800 bg-white"></iframe>
-            </div>
+            </section>
         </div>
 
         <script>
@@ -57,8 +62,11 @@
                     tabSize: 2,
                     indentWithTabs: true,
                     lineWrapping: true,
-                    {#viewportMargin: Infinity,#}
+                    // viewportMargin: Infinity,
                 });
+
+                // make editor fill its container
+                editor.setSize("100%", "100%")
 
                 editor.setValue(`<html lang="en">\n\t<head>\n\t\t<title>My Page</title>\n\t</head>\n\t<body style='background-color:rebeccapurple'>\n\t\t<p>hello world!</p>\n\t</body>\n</html>`)
                 html_view.setAttribute("srcdoc", editor.getValue())

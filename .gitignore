@@ -2,3 +2,5 @@ output.css
 main.db
 __pycache__
 .venv
+node_modules/
+*.log

@@ -12,6 +12,13 @@
         &lt;h1 class="header__title"&gt;HTML and CSS - The Foundations of the Internet&lt;/h1&gt;
     &lt;/header&gt;
     &lt;nav class="nav"&gt;
+        &lt;ul class="nav__list"&gt;
+            &lt;li&gt;&lt;a class="nav__link" href="#section1"&gt;HTML&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="nav__link" href="#section2"&gt;HTML5&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="nav__link" href="#section3"&gt;CSS&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="nav__link" href="#section4"&gt;Today&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="nav__link" href="#section5"&gt;Demo&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
     &lt;/nav&gt;
     &lt;main&gt;
         &lt;section id="section1"&gt;
